@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import Image from "next/image";
 
-const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY || d351585125caba7dbff3933cc6b4cb83;
 
 const Weather = () => {
   const [city, setCity] = useState("");
